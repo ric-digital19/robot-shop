@@ -1,9 +1,9 @@
 pipeline {							
     agent any
     job('dou') {
-     triggers {
-        githubPush()
-     } 
+    triggers {
+        scm('')
+     }
     }
     stages {						
         stage('Build') {			
