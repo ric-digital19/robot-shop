@@ -1,9 +1,5 @@
 pipeline {							
     agent any
-    options { overrideIndexTriggers(true) }
-    triggers {
-    pollSCM('') // Enabling being build on Push
-    }
     stages {						
         stage('Build') {			
             steps {					
