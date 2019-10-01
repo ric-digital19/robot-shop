@@ -1,10 +1,5 @@
 pipeline {							
     agent any
-    job('dou') {
-    triggers {
-        scm('')
-     }
-    }
     stages {						
         stage('Build') {			
             steps {					
